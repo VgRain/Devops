@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
     <?php
     session_start();
     include('admin/db_connect.php');
@@ -10,6 +9,10 @@
             $_SESSION['system'][$key] = $value;
         }
     ob_end_flush();
+?>
+<!DOCTYPE html>
+<html lang="en">
+	<?php 
     include('header.php');
 
 	
